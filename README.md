@@ -1,0 +1,1 @@
+# Labs_Computacao_Paralela
