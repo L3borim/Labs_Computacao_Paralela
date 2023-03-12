@@ -11,9 +11,9 @@ int main()
 {       
         int tamanho=5, menor;
         int** matriz = geraMatrizQuadrada(tamanho);
-        //printMatriz(matriz, tamanho);
+        printMatriz(matriz, tamanho);
 
-        printf("O menor elemento da matriz esta na linha %d", encontrarMenor(matriz, tamanho, &menor));
+        printf("\nO menor elemento da matriz esta na linha %d\n", encontrarMenor(matriz, tamanho, &menor));
         //printf("\nMenor Elemento: %d", menor);
 
         free(matriz);
