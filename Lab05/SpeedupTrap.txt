@@ -1,9 +1,0 @@
-Speedup: S = Tt/Tp
-
-Para a foto time_1xCPU-t3Micro.jpg (2 processadores):
-S = 0m0.001s/0m0.002s
-S = 0,5
-
-Para a foto time_2xCPU-t3nano.jpg (4 processadores:
-S = 0m0.002s/0m0.001s
-S = 2
