@@ -6,3 +6,5 @@ O GMP foi utilizado em ambas a versões serial e paralela para auxiliar no aumen
 2. **Compilar usando o seguinte comando:**
    - Para a versão serial: **`gcc -o Serial1.bin Serial1.c -lgmp -lm`**
    - Para versão paralela:****
+
+Documentação disponível em: https://gmplib.org/
