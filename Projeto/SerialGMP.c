@@ -26,7 +26,7 @@ int main() {
    // printf("Digite um número de N para o cálculo de E: ");
    // scanf("%d", &n);
    n = 10000;
-    mpf_set_default_prec(33000);
+    mpf_set_default_prec(40000);
     
     mpf_t euler;
     mpf_init(euler);
