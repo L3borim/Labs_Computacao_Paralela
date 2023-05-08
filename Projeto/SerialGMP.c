@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include <gmp.h>
 
 void constanteE(int n, mpf_t result) {
@@ -22,17 +23,20 @@ void constanteE(int n, mpf_t result) {
 }
 
 int main() {
-    int n;
+    int n, n_casas;
    // printf("Digite um número de N para o cálculo de E: ");
    // scanf("%d", &n);
-   n = 10000;
-    mpf_set_default_prec(40000);
+    n = 10000;
+    n_casas = 10;
+
+    int bits = ceil(n_casas*log2(10));
+    mpf_set_default_prec(bits);
     
     mpf_t euler;
     mpf_init(euler);
 
     constanteE(n, euler);
-    gmp_printf("euler = %.9999Ff\n", euler);
+    gmp_printf("euler = %.100Ff\n", euler);
 
     mpf_clear(euler);
     return 0;
