@@ -27,7 +27,7 @@ int main() {
    // printf("Digite um número de N para o cálculo de E: ");
    // scanf("%d", &n);
     n = 10000;
-    n_casas = 10;
+    n_casas = 10000;
 
     int bits = ceil(n_casas*log2(10));
     mpf_set_default_prec(bits);
@@ -36,7 +36,7 @@ int main() {
     mpf_init(euler);
 
     constanteE(n, euler);
-    gmp_printf("euler = %.100Ff\n", euler);
+    gmp_printf("euler = %.10000Ff\n", euler);
 
     mpf_clear(euler);
     return 0;
