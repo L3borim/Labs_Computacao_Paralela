@@ -55,10 +55,12 @@ void constanteE(int n, mpf_t result) {
 int main() {
     int n, n_casas;
     n = 10000;
-    //n_casas = 10;
+    n_casas = 10000;
 
-    //int bits = ceil(n_casas*log2(10));
-    mpf_set_default_prec(40000);
+    int bits = ceil(n_casas*log2(10));
+    mpf_set_default_prec(bits);
+
+//mpf_set_default_prec(40000);
     
     mpf_t euler;
     mpf_init(euler);
