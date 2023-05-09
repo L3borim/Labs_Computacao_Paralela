@@ -19,7 +19,7 @@ void* constanteE_thread(void* args_ptr) {
     mpf_init(fat);
     mpf_init(termo);
 
-    for (i = args->start; i <= args->end; i += NUM_THREADS) {
+    for (i = args->start; i <= args->end; i++) {
         mpf_set_ui(fat, 1);
         for (j = 1; j <= i; j++) {
             mpf_mul_ui(fat, fat, j);
@@ -32,6 +32,7 @@ void* constanteE_thread(void* args_ptr) {
     mpf_clear(termo);
     pthread_exit(NULL);
 }
+
 
 void constanteE(int n, mpf_t result) {
     pthread_t threads[NUM_THREADS];
