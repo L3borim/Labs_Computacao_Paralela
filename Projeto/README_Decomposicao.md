@@ -15,7 +15,7 @@
 O limite inferior é 7
 
 <h3>3. Quantos processadores são necessários para se conseguir o tempo mínimo de execução?</h3>
-
+A quantidade de processadores necessários deverá ser a mesma quantidade de threads
 
 <h3>4. Qual é o grau máximo de concorrência?</h3>
 O grau máximo de concorrencia dependerá da quantidade de threads definidos no código. Se utilizarmos 4 threads, o grau máximo de
