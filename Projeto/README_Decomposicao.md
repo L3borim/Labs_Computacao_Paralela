@@ -1,4 +1,4 @@
-1. Quais são as tarefas no caminho crítico para cada grafo de dependência? Para responder a pergunta, apresente um DAG do seu projeto.
+<h3>1. Quais são as tarefas no caminho crítico para cada grafo de dependência? Para responder a pergunta, apresente um DAG do seu projeto.</h3>
 
        DAG: https://github.com/L3borim/Labs_Computacao_Paralela/blob/main/Projeto/DAG%20(Euler).jpeg <br/>
  *TAREFAS* <br/>
@@ -11,7 +11,14 @@
  T7) Incrementa o result com o termo <br/>
  T8) Limpa as variáveis fat e termo <br/>
 
-2. Qual é o limite inferior do tempo de execução paralela para cada decomposição?
-3. Quantos processadores são necessários para se conseguir o tempo mínimo de execução?
-4. Qual é o grau máximo de concorrência?
-5. Qual é o paralelismo médio?
+<h3>2. Qual é o limite inferior do tempo de execução paralela para cada decomposição?</h3>
+O limite inferior é 7
+
+<h3>3. Quantos processadores são necessários para se conseguir o tempo mínimo de execução?</h3>
+
+
+<h3>4. Qual é o grau máximo de concorrência?</h3>
+O grau máximo é 8
+
+<h3>5. Qual é o paralelismo médio?</h3>
+O paralelismo médio 8/7 = 1,1428
