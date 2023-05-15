@@ -5,7 +5,7 @@
 void constanteE(int n, mpf_t result) {
     int i, j;
     mpf_t fat, termo;
-    mpf_init_set_d(result, 1.0);
+   // mpf_init_set_d(result, 1.0);
     mpf_init(fat);
     mpf_init(termo);
 
