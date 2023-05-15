@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 #include <gmp.h>
-
 void constanteE(int n, mpf_t result, int bits) {
     int i, j;
     mpf_t fat, termo;
-   // mpf_init_set_d(result, 1.0);
+    mpf_init_set_d(result, 1.0);
     mpf_init2(fat, bits);
     mpf_init2(termo, bits);
-
     for (i = 1; i <= n; i++) {
         mpf_set_ui(fat, 1);
         for (j = 1; j <= i; j++) {
@@ -17,11 +15,9 @@ void constanteE(int n, mpf_t result, int bits) {
         mpf_ui_div(termo, 1, fat);
         mpf_add(result, result, termo);
     }
-
     mpf_clear(fat);
     mpf_clear(termo);
 }
-
 int main() {
     int n, n_casas;
    // printf("Digite um número de N para o cálculo de E: ");
