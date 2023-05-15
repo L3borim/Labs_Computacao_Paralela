@@ -2,12 +2,12 @@
 #include <math.h>
 #include <gmp.h>
 
-void constanteE(int n, mpf_t result) {
+void constanteE(int n, mpf_t result, int bits) {
     int i, j;
     mpf_t fat, termo;
    // mpf_init_set_d(result, 1.0);
-    mpf_init(fat);
-    mpf_init(termo);
+    mpf_init2(fat, bits);
+    mpf_init2(termo, bits);
 
     for (i = 1; i <= n; i++) {
         mpf_set_ui(fat, 1);
@@ -35,7 +35,7 @@ int main() {
     mpf_t euler;
     mpf_init(euler);
 
-    constanteE(n, euler);
+    constanteE(n, euler, bits);
     gmp_printf("euler = %.10000Ff\n", euler);
 
     mpf_clear(euler);
