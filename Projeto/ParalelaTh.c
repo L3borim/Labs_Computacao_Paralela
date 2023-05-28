@@ -3,7 +3,7 @@
 #include <gmp.h>
 #include <omp.h>
 
-#define NUM_THREADS 4
+#define NUM_THREADS 2
 
 void constanteE(int n, mpf_t result, int bits) {
     int i, j;
