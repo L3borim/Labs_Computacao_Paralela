@@ -18,6 +18,11 @@ Utilizamos a função `ceil(n_casas * log2(10));` para calcular a melhor precis�
 
 - Região crítica(‘# pragma omp critical’) garante que apenas uma thread por vez pode atualizar a variável 'global euler' de forma segura, a soma do valor local de ‘euler’ e adicionado ao valor global.
 
+4. **Versões anteriores**
+-Tentamos diversas formas de paralelizar o código, a ultima era uma versão onde para realizar os calculos intermediarios de euler, utilizava dois 'for', o que estava fazendo com que o codigo ficasse muito mais demorado com versao serial e paralelo para n = 100.000 com tempo igual a 2 horas.
+
+
+
 # Instalação da Biblioteca GMP
 
 O GMP foi utilizado em ambas a versões serial e paralela para auxiliar no aumento da precisão. Segue o passo a passo para instalar a biblioteca para o correto funcionamento do código
