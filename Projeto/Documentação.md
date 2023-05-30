@@ -1,5 +1,5 @@
 1. **Metodologia** 
-Para realizar esse projeto, adotamos uma abordagem na qual o nosso código paralelo divide o problema em N partes. Usa um vetor onde o tamanho é a quantidade de threads e cada posição do vetor calcula o resultado intermediário de cada thread. Ao longo do código utilizamos o OMP para organização da memória compartilhada.
+1.1. Para realizar esse projeto, adotamos uma abordagem na qual o nosso código paralelo divide o problema em N partes. Usa um vetor onde o tamanho é a quantidade de threads e cada posição do vetor calcula o resultado intermediário de cada thread. Ao longo do código utilizamos o OMP para organização da memória compartilhada.
 
 2. **GMP** 
 Utilizamos a biblioteca GMP para iniciar as variáveis para os cálculos e estabelecer uma unidade de precisão que satisfizesse o desafio em questão.
