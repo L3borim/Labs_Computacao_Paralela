@@ -7,10 +7,10 @@ S = 0,2920
 
 ## Versao Final
 
-* **Para Precisao = 1M e N = 1M**:
+* **Para Precisao = 1M e N = 1M**:  
   S = 269.826s/241.106s  
   S = 1,1203
 
-* **Para Precisao de 100k e N = 100k**:
+* **Para Precisao de 100k e N = 100k**:  
   S = 2.585s/2.468s  
   S = 1,0474     
