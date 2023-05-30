@@ -2,15 +2,15 @@
 
 ## Versao Inicial
 
-S = 0m15.989s/0m54.748s
+S = 0m15.989s/0m54.748s\n
 S = 0,2920
 
 ## Versao Final
 
 * **Para Precisao = 1M e N = 1M**:
-  S = 269.826s/241.106s
+  S = 269.826s/241.106s\n
   S = 1,1203
 
 * **Para Precisao de 100k e N = 100k**:
-  S = 2.585s/2.468s
+  S = 2.585s/2.468s\n
   S = 1,0474     
