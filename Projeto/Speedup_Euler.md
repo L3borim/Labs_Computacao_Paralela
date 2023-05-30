@@ -1,4 +1,4 @@
-#Calculo do Speedup
+# Calculo do Speedup
 
 * **Para Precisao = 1M e N = 1M**:
   269.826s/241.106s =  1,1203
