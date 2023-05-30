@@ -49,8 +49,8 @@ void constanteE(int n, mpf_t euler, int bits) {
 }
 
 int main() {
-    int n = 10000;
-    int n_casas = 10000;
+    int n = 100000;
+    int n_casas = 100000;
     int bits = ceil(n_casas * log2(10));
 
     mpf_t euler;
@@ -69,16 +69,8 @@ int main() {
         return 1;
     }
 
-    // Converter o valor de euler em uma string
-    int n_casas_decimais = n_casas + 2;  // Número de casas decimais desejadas
-    mp_exp_t exp;
-    char *euler_str = mpf_get_str(NULL, &exp, 10, n_casas_decimais, euler);
-
     // Gravar a string no arquivo
-    fprintf(arquivo, "%s\n", euler_str);
-
-    // Liberar a memória alocada
-    free(euler_str);
+    gmp_fprintf(arquivo,"%.10000Ff\n", euler);
 
     // Fechar o arquivo
     fclose(arquivo);

@@ -18,8 +18,8 @@ void constanteE(int n, mpf_t *euler, int bits) {
 int main() {
     int n, n_casas;
 
-    n = 10000;
-    n_casas = 10000;
+    n = 100000;
+    n_casas = 100000;
 
     int bits = ceil(n_casas*log2(10));
     mpf_set_default_prec(bits);
