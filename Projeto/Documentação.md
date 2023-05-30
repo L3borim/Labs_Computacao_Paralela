@@ -28,3 +28,18 @@ O GMP foi utilizado em ambas a versões serial e paralela para auxiliar no aumen
    - Para versão paralela usando openmp: **`gcc -o ParalelaTh.bin ParalelaTh.c -lgmp -lm -fopenmp`**
 
 Documentação disponível em: https://gmplib.org/
+### N = 100.000
+![image](https://github.com/L3borim/Labs_Computacao_Paralela/assets/82789071/66df9911-1ad7-450a-990f-b2ac57c263ea)
+
+- Tempo serial: 2.585s
+- Tempo paralelo: 2.468s
+- Speedup: 2.585s/2.468s = 1,0474
+
+### N = 1.000.000
+![image](https://github.com/L3borim/Labs_Computacao_Paralela/assets/82789071/94b8fa4d-9ec0-40e0-b948-9649924682b6)
+
+- Tempo serial: 269.826s
+- Tempo paralelo: 241.106s
+- Speedup: 269.826s/241.106s = 1,1203
+
+
